@@ -20,6 +20,7 @@ Run FIFO Scheduler
 cargo run
 Run Optimized Scheduler
 
+For experiment A:
 Inside main.rs change:
 
 const OPTIMIZED: bool = false;
@@ -31,6 +32,25 @@ const OPTIMIZED: bool = true;
 Then run:
 
 cargo run
+
+For Experiment B, change:
+
+const IO_PERCENT: usize = 70;
+const CPU_PERCENT: usize = 30;
+
+to:
+
+const IO_PERCENT: usize = 80;
+const CPU_PERCENT: usize = 20;
+
+Then run:
+
+cargo run
+
+That gives:
+
+800 IO tasks
+200 CPU tasks
 
 ----
 
