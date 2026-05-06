@@ -17,7 +17,7 @@ const WORKER_COUNT: usize = 8;
 const TOTAL_TASKS: usize = 1000;
 const IO_PERCENT: usize = 80;
 const CPU_PERCENT: usize = 20;
-const OPTIMIZED: bool = false;
+const OPTIMIZED: bool = true;
 
 fn main() {
     let (task_tx, task_rx) = mpsc::channel::<Task>();
